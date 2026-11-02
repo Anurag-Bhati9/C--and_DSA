@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 /*
+// Traver the whole array one by one and doing the oprations
 int main(void)
 {
     int panelOutput[3][3] = {
@@ -28,21 +29,45 @@ cout << " Total Wattage Produced : " << totalWattage << '\n';
 
 */
 
+// diagonal traversal of array and doing the operations
+/*
 int main(void)
 {
     int panelOutput[3][3] = {
-      {105, 112, 109},
-    {98, 120, 115},
-    {101, 108, 111}
+        {105, 112, 109},
+        {98, 120, 115},
+        {101, 108, 111}
     };
     
     int  diagonalTotalWattage = 0;
     
     for (int i = 0 ; i < 3 ; i++){
-        if(panelOutput[i][i]){
+        
             diagonalTotalWattage += panelOutput[i][i]; 
+            
         }
+        cout << "Diagonal Total is : "<< diagonalTotalWattage <<'\n';
+        
     }
-    cout << "Diagonal Total is : "<< diagonalTotalWattage <<'\n';
+    
+*/
 
-}
+// Opposite diagonal traversal of array and doing the operations
+int main(void)
+{
+    int panelOutput[3][3] = {
+        {105, 112, 109},
+        {98, 120, 115},
+        {101, 108, 111}
+    };
+    
+    int oppositeDiagonalTotalWattage = 0;
+    
+    for (int i = 0 ; i < 3 ; i++){
+        
+           oppositeDiagonalTotalWattage += panelOutput[i][2-i]; 
+            
+        }
+        cout << "Diagonal Total is : "<< oppositeDiagonalTotalWattage <<'\n';
+        
+    }
