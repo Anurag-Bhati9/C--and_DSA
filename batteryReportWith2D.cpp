@@ -53,6 +53,7 @@ int main(void)
 */
 
 // Opposite diagonal traversal of array and doing the operations
+
 int main(void)
 {
     int panelOutput[3][3] = {
