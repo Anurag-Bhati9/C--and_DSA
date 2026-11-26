@@ -29,7 +29,7 @@ int main(void)
 
 // find the target product with binary search
 
-    int start = 0,end = 5 ;
+    int start = 0,end = n-1 ;
     int mid = (start+end)/2;
     bool flag = false;
     while(start <=  end)
