@@ -25,5 +25,7 @@ int main(void)
   for ( int k = 0 ; k < 4; k++){  
       cout<<scores[k]<<" ";
     }
+
+    return 0;
   
 }
